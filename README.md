@@ -5,6 +5,7 @@ This is my take on the anagrams API project that performs a host of functions. I
 that manages a word library and provides anagrams that match a word.
 
 # The Project
+To get started, clone the source to a location on your local system. Then, either run `gradle clean build` to generate the JAR or use the JAR provided in the repository. Start the appplication by running the java command `java -jar anagrams-1.0.0.jar` (mind the version if it's been changed). The server is up and running on port 3000.
 
 The API has a few endpoints to consider:
 
