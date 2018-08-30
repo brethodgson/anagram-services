@@ -2,6 +2,7 @@ package com.anagrams.services.impl;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Arrays;
@@ -142,9 +143,9 @@ public class WordServiceImpl implements WordService{
 	 */
 	@Override
 	public void loadWordLibraryFromFile() {
-		Resource resource = new ClassPathResource("words/dictionary.txt");
-
-		try (BufferedReader reader = Files.newBufferedReader(Paths.get(resource.getFile().getPath()))) {
+		
+		try (BufferedReader reader = new BufferedReader(
+		          new InputStreamReader(new ClassPathResource("/words/dictionary.txt").getInputStream()))) {
 			
 			logger.info("Starting to process the dictionary...");
 			
