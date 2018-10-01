@@ -1,4 +1,4 @@
-Ibotta Dev Project (Anagram ReST Services)
+Anagram ReST Services
 =========
 
 This is my take on the anagrams API project that performs a host of functions. It's a simple application
